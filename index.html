@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic CSS</title>
+    <style>
+        /*body{
+            color:green;
+        }
+        div{
+            text-align: justify;
+            color:red;
+        }
+        span{
+            color:rgba(22,117,221,0.5);
+            the a in rgba stands for alpha which is the value that controls opacity
+        }*/
+        /*img{
+            height:100%
+            float: left;
+            padding-right: 20px;
+        }*/
+        /*div{
+            color: black;
+            background-color: orange;
+        }*/
+        /*div{
+            /*font-family:comic sans ms;
+            font-size: 24pt;
+            font-weight:bold;*/
+            /*font: bold 24pt comic sans ms;
+            /*text-decoration: underline;
+            text-decoration-color: green;
+            text-decoration-style: wavy;
+            text-decoration: underline wavy green;
+        }*/
+        /*h1{
+            text-align: center;
+        }
+        p{
+            font:bold 16pt arial;
+        }
+        button{
+            background-color:red;
+            font:14pt comic sans ms;
+        }*/
+        a{
+            font:24pt arial;
+            color:blue;
+            text-decoration:none;
+        }
+    </style>
+    <script>
+        /*function initialize(){
+            halloweenText = document.getElementById("colordiv");
+
+
+            fore = "orange";
+            back = "black";
+
+
+            textWidth = 100;
+        }
+        function toggleColor(){
+            var tmp = fore;
+            fore = back;
+            back = tmp;
+
+
+            display();
+        }
+        function display(){
+            halloweenText.style.color = fore;
+            halloweenText.style.backgroundColor = back;
+            halloweenText.style.width = textWidth + "%";
+        }
+        function changeWidth(w){
+            textWidth=w;
+            display();
+        }
+        function initialize(){
+            textOutput = document.getElementById("textdiv");
+            fontSizeOutput = document.getElementById("sizeout");
+
+            fontSize = 24;
+        }
+        function modifyFontSize(mod){
+            fontSize += mod;
+
+            if(fontSize < 4)
+                fontSize = 4;
+
+            display();
+        }
+        function display(){
+            fontSizeOutput.innerHTML = fontSize;
+            textOutput.style.fontSize = fontSize + "pt";
+        }*/
+        /*function getRandomInteger(lower,upper){
+            //R = parseInt(rnd * (upper - (lower - 1))) + lower
+            var multiplier = upper - (lower - 1);
+            var rnd = parseInt(Math.random() * multiplier) + lower;
+
+            return rnd;
+        }
+        function initialize(){
+            numberOutput = document.getElementById("numout");
+            rndNum = 0;
+
+            display();
+        }
+        function changeNumber(){
+            rndNum = getRandomInteger(1,10);
+            display();
+        }
+        function display(){
+            numberOutput..innerHTML = rndNum;
+        }*/
+        function initialize(){
+            visitsOut = document.getElementById("visits");
+
+            if(!sessionStorage.numVisits){
+                sessionStorage.numVisits = 0;
+            }else{
+                sessionStorage.numVisits++;
+            }
+
+            display();
+        }
+        function display(){
+            visitsOut.innerHTML = sessionStorage.numVisits;
+        }
+    </script>
+</head>
+<body onload = "initialize();">
+    This is the text on my basic CSS page.
+    <!--Add a <div>-->
+<!-- <div>
+        This is the text in my <span>span</span> in my div.
+    </div>
+    <div>
+        <img src = "https://static01.nyt.com/images/2023/04/26/nyregion/00nymetro-hospitalburst1/00nymetro-hospitalburst1-jumbo.jpg?quality=75&auto=webp"/>
+        <span>The opened package of potato chips held the answer to the mystery. Both detectives looked at it but failed to realize it was the key to solve the crime. They passed by it assuming it was random trash ensuring that the case would never be solved.
+            He had done everything right. There had been no mistakes throughout the entire process. It had been perfection and he knew it without a doubt, but the results still stared back at him with the fact that he had lost.
+            "It doesn't take much to touch someone's heart," Daisy said with a smile on her face. "It's often just the little things you do that can change a person's day for the better." Daisy truly believed this to be the way the world worked, but she didn't understand that she was merely a robot that had been programmed to believe this.
+            The headphones were on. They had been utilized on purpose. She could hear her mom yelling in the background, but couldn't make out exactly what the yelling was about. That was exactly why she had put them on. She knew her mom would enter her room at any minute, and she could pretend that she hadn't heard any of the previous yelling.
+            Do you think you're living an ordinary life? You are so mistaken it's difficult to even explain. The mere fact that you exist makes you extraordinary. The odds of you existing are less than winning the lottery, but here you are. Are you going to let this extraordinary opportunity pass?</span>
+    </div>
+
+
+    <h1>Old Doctors</h1>
+    <img src = "images/jon pertwee.jpg" />
+    <img src = "imgaes/tom baker.jpg" />
+    <img src = "images/matt smith.jpg" />
+-->
+    <!--<div id = "colordiv">
+        Click the button to switch me from black to orange and back again and again. Happy Halloween.
+    </div>
+
+
+    <p>
+        <button onclick = "toggleColor();">Toggle Colors</button>\
+        <button onclick = "changeWidth(25);">25%</button>
+        <button onclick = "changeWidth(50);">50%</button>
+        <button onclick = "changeWidth(75);">75%</button>
+        <button onclick = "changeWidth(100);">100%</button>
+    </p>-->
+
+<!--
+    <div id = "textdiv">
+        I am a wonderful example of how fonts work!
+    </div>
+
+
+    <hr />
+
+
+    <p>
+        <div>Current font size: <span id = "sizeout"></span> point</div>
+        <button onclick = "modifyFontSize(1);">Font Size ++</button>
+        <button onclick = "modifyFontSize(-1);">Font Size --</button>
+    </p>
+-->
+<!--
+    <h1>This is my great page about external files</h1>
+    <p id = "numout"></p>
+    <button onclick = "changeNumber();">Change the number</button>
+-->
+<h1>This is my home page</h1>
+<h2>I have visited here <span id = "visits"></span> times.</h2>
+<a href = "index.html">Link to Destination Page</a>
+<br />
+<a href = "http://google.com" target = "_blank">Link to Google</a>
+</body>
+</html>
